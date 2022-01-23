@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body,
+.bgContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.bgContainer {
+  background-image: url("https://picsum.photos/1920/1080");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.middlePart {
+  text-align: center;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#clock h2 {
+  font-size: 130px;
+  font-weight: normal;
+  color: white;
+}
+
+#greeting {
+  font-size: 50px;
+  font-weight: normal;
+  color: white;
+}
+
+#name_form input:last-child {
+  display: none;
+}
+
+#name_form input:first-child {
+  color: white;
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  border-bottom: 3px solid white;
+}
+
+#name_form input:first-child:focus {
+  outline: none;
+}
+
+#name_form input:first-child::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+#name_form input:first-child:focus::placeholder {
+  opacity: 0;
+}
+
+#topPart {
+  width: 100%;
+  height: 20%;
+  align-self: flex-end;
+  justify-content: flex-start;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+#weather {
+  width: 10%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#weather span:first-child {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+#quote {
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#empty {
+  padding: 20px;
+  width: 10%;
+}
+
+#bottomPart {
+  height: 30%;
+}
+
+#todo_list {
+  max-height: 80%;
+  overflow-y: auto;
+  width: 100%;
+  padding: 0;
+}
+
+#todo_form input {
+  color: white;
+  border: none;
+  font-size: 20px;
+  background-color: transparent;
+  text-align: center;
+  border-bottom: 3px solid white;
+}
+
+#todo_form input::placeholder {
+  color: white;
+}
+
+#todo_form input:focus {
+  outline: 0;
+}
+
+#todo_form input:focus::placeholder {
+  opacity: 0;
+}
+
+#todo_list li {
+  color: white;
+  font-size: 18px;
+  width: 100%;
+  display: flex;
+  margin: 5px 0px 5px 0px;
+}
+
+#todo_list span {
+  width: 80%;
+  padding-left: 10px;
+}
+
+#todo_list button {
+  width: 20%;
+  color: white;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+}
+
+#todo_list button:hover {
+  cursor: pointer;
+  color: #aaa;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
