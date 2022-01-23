@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Momentum</title>
+    <link href="../css/index.css" rel="stylesheet">
+</head>
+<body>
+    <div class="bgContainer">
+        <div id="topPart">
+            <div id="empty">
+                &nbsp;
+            </div>
+            <div id="quote">
+                <span>quote</span>
+                <span>person</span>
+            </div>
+            <div id="weather">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="middlePart">
+            <div id="clock">
+                <h2>00:00</h2>
+            </div>
+            <form id="name_form">
+                <input type="text" placeholder="What is your name?">
+                <input type="submit" value="Log-in">
+            </form>
+            <h2 id="greeting" style="display: none;">Hello, You!</h2>
+        </div>
+        <div id="bottomPart">
+            <form id="todo_form">
+                <input type="text" placeholder="What would you do today?">
+            </form>
+            <ul id="todo_list">
+            </ul>
+        </div>
+    </div>
+    <script src="../js/clock.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/weather.js"></script>
+    <script src="../js/quote.js"></script>
+    <script src="../js/todo.js"></script>
+</body>
+</html>
